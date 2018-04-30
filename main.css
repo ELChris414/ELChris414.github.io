@@ -10,6 +10,7 @@ h1, h2 {
 
 .sticky {
     top: 0;
+    width: 100%;
     margin: 0 auto;
     position: sticky;
 
@@ -17,6 +18,8 @@ h1, h2 {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    
+    background-color: white;
 }
 
 body {
