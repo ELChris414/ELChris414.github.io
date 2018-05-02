@@ -1,2 +1,2 @@
-# hub
-The Github ELChris414 Hub
+# website
+This is my website's source code. Nothing really special, just a jekyll website.

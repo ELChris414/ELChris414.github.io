@@ -1,0 +1,8 @@
+<div class="txt">
+    <h2>{{ include.post.title }}</h2>
+    <!--<h3>Categories: </h3>-->
+    {{ include.post.content }}
+</div>
+<div class="timetable">
+    <p>Written by: {{ include.post.author }} on {{ include.post.date | date_to_string }}
+</div>

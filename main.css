@@ -1,6 +1,12 @@
 * {
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+p,a {
     color: rgb(0, 0, 0);
+}
+
+a {
     text-decoration: none;
 }
 
@@ -23,12 +29,12 @@ h1, h2 {
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #FDFDFD;
 
     display: grid;
     grid-template-columns: 10% auto 10%;
     grid-column-gap: 10px;
-    grid-template-rows: auto 5% auto 10% 10%;
+    grid-template-rows: auto 5% auto 10% 1em 10%;
 }
 
 .title {    
@@ -68,9 +74,20 @@ body {
     text-align: right;
 }
 
-.social {
+.pagination {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 6;
+
+    text-align: center;
+}
+
+.social {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+
+    line-height: 0.4em;
 }
