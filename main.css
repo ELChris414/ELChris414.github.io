@@ -19,7 +19,7 @@ a {
 
 .logo {
     width: 15%;
-    max-width: 100px;
+    max-width: 60px;
 }
 
 h1, h2 {
@@ -57,7 +57,9 @@ body {
     grid-row-end: 2;*/
 
     text-align: center;
-    font-size: 40pt;
+    /*font-size: 40pt;*/
+    font-size: calc(15pt + 3.5vw);
+    
 }
 
 .mn {
@@ -97,6 +99,8 @@ body {
 }
 
 .social {
+    padding-top: 10px;
+
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 6;
