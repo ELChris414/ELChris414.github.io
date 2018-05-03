@@ -2,16 +2,29 @@
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-p,a {
-    color: rgb(0, 0, 0);
+p {
+    color: #161616;
 }
 
 a {
+    color: #004db2;
     text-decoration: none;
+}
+
+.highlight {
+    border: #161616 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.logo {
+    width: 15%;
+    max-width: 100px;
 }
 
 h1, h2 {
     line-height: 0em;
+    color: #161616;
 }
 
 .sticky {
@@ -37,7 +50,7 @@ body {
     grid-template-rows: auto 5% auto 10% 1em 10%;
 }
 
-.title {    
+#title {    
     /*grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -90,4 +103,5 @@ body {
     grid-row-end: 7;
 
     line-height: 0.4em;
+    text-align: justify;
 }

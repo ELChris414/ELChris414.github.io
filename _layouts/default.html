@@ -6,12 +6,18 @@
     <title>elchris414</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,600,600i|IBM+Plex+Sans:500,500i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" type="text/x-scss" media="screen" href="https://cdn.rawgit.com/jekyll/minima/master/_sass/minima/_syntax-highlighting.scss" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/ELChris414/e77f9cc6a0a29b9df03a2241c683cbd5/raw/1cc2f434b53013162aa1d1f57b5692f9f16c808e/syntax-highlighting.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
+    <script>
+        function discord() {
+            document.getElementById("title").innerHTML = Date();
+        }
+    </script>
+    <!-- Did you for reals believe that it would be this easy? -->
 </head>
 <body>
     <div class="sticky">
-        <a href="../"><h1 class="title">elchris414</h1></a>
+        <a href="../"><h1 id="title">elchris414</h1></a>
         <div class="mn">
             <p>stuff &#x2022; more stuff</p>
         </div>
@@ -19,10 +25,10 @@
     {{ content }}
     <div class="social">
         <h2>Social</h2>
-        <p>Twitter: <a href="https://twitter.com/elchris414">elchris414</a></p>
-        <p>Github: <a href="https://github.com/elchris414">elchris414</a></p>
-        <p>Twitch: <a href="https://twitch.tv/elchris414">elchris414</a></p>
-        <p>Discord: elchris414#8900</p>
+        <a href="https://twitter.com/elchris414"><img src="/assets/twitter.svg" alt="Twitter" class="logo" /></a>
+        <a href="https://github.com/elchris414"><img src="/assets/github.svg" alt="Github" class="logo" /></a>
+        <a href="https://twitch.tv/elchris414"><img src="/assets/twitch.png" alt="Twitch" class="logo" /></a>
+        <img src="/assets/discord.svg" alt="Discord" onclick="document.getElementById('title').innerHTML = 'elchris414#8900';" class="logo" />
         <br><p>Last build: {{ site.time | date_to_string }}</p>
     </div>
 </body>
