@@ -4,6 +4,7 @@ title: "My first post!"
 author: elchris414
 date:   2018-05-02 20:53:27 +0300
 categories: life development
+description: "This is my first post where I talk about my future plans with this project!"
 ---
 __Hello!__
 And welcome to my new and hopefully _fancy_ blog!
@@ -20,6 +21,7 @@ Now, the blog is definitely not finished. Missing features are:
 * About page
 * Design
 * Syntax Highlighting
+* Favicons
 * _and quite more..._
 
 But I am excited to finally have something that I am proud of and be able to show it to
