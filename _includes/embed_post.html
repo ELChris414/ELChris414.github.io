@@ -4,5 +4,6 @@
     {{ include.post.content }}
 </div>
 <div class="timetable">
-    <p>Written by: {{ include.post.author }} on {{ include.post.date | date_to_string }}
+    <p>Written by: {{ include.post.author }} on {{ include.post.date | date_to_string }}</p>
+    {% if paginator %}<a href="{{ site.url }}{{ include.post.url }}">Permalink</a>{% endif %}
 </div>

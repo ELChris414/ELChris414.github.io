@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>elchris414</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:type" content="website" />
+    {% if page.is_post %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:url" content="{{ site.url }}" />
+    {% endif %}
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i,600,600i|IBM+Plex+Sans:500,500i,700,700i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.rawgit.com/ELChris414/e77f9cc6a0a29b9df03a2241c683cbd5/raw/1cc2f434b53013162aa1d1f57b5692f9f16c808e/syntax-highlighting.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
@@ -17,7 +26,7 @@
 </head>
 <body>
     <div class="sticky">
-        <a href="../"><h1 id="title">elchris414</h1></a>
+        <a href="/"><h1 id="title">elchris414</h1></a>
         <div class="mn">
             <p>stuff &#x2022; more stuff</p>
         </div>

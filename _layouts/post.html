@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% if paginator %}
 {% for posty in paginator.posts %}
   {% include embed_post.html post=posty %}
 {% endfor %}
@@ -18,3 +19,6 @@ layout: default
         <span>Next</span>
     {% endif %}
 </div>
+{% else %}
+{% include embed_post.html post=page %}
+{% endif %}
