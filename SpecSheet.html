@@ -1086,36 +1086,36 @@ body .markdown-body
 </ul>
 <p>*Thus they don&rsquo;t have to be accounted in the <code>;</code> <code>?</code> mechanism.</p>
 <h1 id="example">Example<a class="headerlink" href="#example" title="Permanent link"></a></h1>
-<div class="codehilite"><pre>name |Big Company;
-money #30000
+<div class="codehilite"><pre>name &quot;Big Company&quot;
+money: 30000
 alive $1
-employees&amp;
-  &amp; name |Maria;
-    surname |Brown;
+employees &amp;
+  &amp; name &quot;Maria&quot;
+    surname &quot;Brown&quot;
     married $0
-    age #21
+    age: 21
     tasks &amp;
-      |Turn on the server;    /* Room for improvement here by removing the need for another ; */
-      |Serve the clients;
-      |Look into the issue 248;3    /* If the mentioned improvement is done the # here will need to be escaped /# */
-  &amp; name |Chris;
-    surname |Brown;
+      &quot;Turn on the server&quot;
+      &quot;Serve the clients&quot;
+      &quot;Look into the issue 248;3
+  &amp; name &quot;Chris&quot;
+    surname &quot;Brown&quot;
     married $0
-    age #25
+    age: 25
     tasks &amp;
-      |Welcome the new employees;
-      &amp; name |Fix these issues;
+      &quot;Welcome the new employees&quot;
+      &amp; name &quot;Fix these issues&quot;
         issues &amp;
-          &amp; name |Login issue on example.com;
-            id #281
+          &amp; name &quot;Login issue on example.com&quot;
+            id: 281
             open $1
-            labels &amp; |Critical;3
-          &amp; name |Can&#39;t rename project on example2.com;
-            id #294
+            labels &amp; &quot;Critical;3
+          &amp; name &quot;Can&#39;t rename project on example2.com&quot;
+            id: 294
             open $1
-            labels &amp; |Minor;
-                     |Detail;
-                     |example2?
+            labels &amp; &quot;Minor&quot;
+                     &quot;Detail&quot;
+                     &quot;example2?    /* Maybe auto ending string needs to be removed? Maybe it should be &quot;? ? */
 </pre></div>
 
 <h1 id="minified">Minified<a class="headerlink" href="#minified" title="Permanent link"></a></h1>
