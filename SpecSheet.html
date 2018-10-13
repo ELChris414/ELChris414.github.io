@@ -1089,33 +1089,36 @@ body .markdown-body
 <div class="codehilite"><pre>name &quot;Big Company&quot;
 money: 30000
 alive $1
-employees &amp;
-  &amp; name &quot;Maria&quot;
+employees {
+  { name &quot;Maria&quot;
     surname &quot;Brown&quot;
     married $0
     age: 21
     tasks &amp;
       &quot;Turn on the server&quot;
       &quot;Serve the clients&quot;
-      &quot;Look into the issue 248;3
-  &amp; name &quot;Chris&quot;
+      &quot;Look into the issue 248&quot;
+  |2
+  { name &quot;Chris&quot;
     surname &quot;Brown&quot;
     married $0
     age: 25
-    tasks &amp;
+    tasks {
       &quot;Welcome the new employees&quot;
-      &amp; name &quot;Fix these issues&quot;
-        issues &amp;
-          &amp; name &quot;Login issue on example.com&quot;
+      { name &quot;Fix these issues&quot;
+        issues {
+          { name &quot;Login issue on example.com&quot;
             id: 281
             open $1
-            labels &amp; &quot;Critical;3
-          &amp; name &quot;Can&#39;t rename project on example2.com&quot;
+            labels { &quot;Critical&quot;
+          |2
+          { name &quot;Can&#39;t rename project on example2.com&quot;
             id: 294
             open $1
-            labels &amp; &quot;Minor&quot;
+            labels { &quot;Minor&quot;
                      &quot;Detail&quot;
-                     &quot;example2?    /* Maybe auto ending string needs to be removed? Maybe it should be &quot;? ? */
+                     &quot;example2&quot;
+]
 </pre></div>
 
 <h1 id="minified">Minified<a class="headerlink" href="#minified" title="Permanent link"></a></h1>
