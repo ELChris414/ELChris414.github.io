@@ -1,9 +1,9 @@
 title: elchris414's blog
-email: chrischaralambous14@gmail.com
+email: me@chrisch.dev
 description: >-
   Just a blog of the different things that I elchris414 want to say
 baseurl: ""
-url: "https://elchris.me"
+url: "https://chrisch.dev"
 
 # Build settings
 markdown: kramdown
