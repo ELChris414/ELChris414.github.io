@@ -78,6 +78,7 @@ body {
     grid-row-end: 4;
 
     text-align: justify;
+    display: block;
 }
 
 .timetable {
